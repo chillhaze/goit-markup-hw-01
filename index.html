@@ -9,32 +9,33 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <a class="header__logo" href=""> <span>Web</span>Studio </a>
       <nav class="header__menu">
-        <ul class="menu-items">
-          <li class="menu-item">
+        <a class="header__logo" href="">
+          <span> Web </span>
+          Studio
+        </a>
+        <ul class="header__menu-items">
+          <li class="header__menu-item">
             <a href="">Студия</a>
           </li>
-          <li class="menu-item">
+          <li class="header__menu-item">
             <a href="">Портфолио</a>
           </li>
-          <li class="menu-item">
+          <li class="header__menu-item">
             <a href="">Контакты</a>
           </li>
         </ul>
       </nav>
-      <div class="header__contacts">
-        <ul>
-          <li>
-            <a href="mailto:info@devstudio.com" class="mail"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="tel">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="header__contacts">
+        <li class="contacts-item">
+          <a href="mailto:info@devstudio.com" class="mail">
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="contacts-item">
+          <a href="tel:+380961111111" class="tel"> +38 096 111 11 11 </a>
+        </li>
+      </ul>
     </header>
     <!-- Main -->
     <main>
@@ -47,58 +48,64 @@
         <a href="" class="btn">Заказать услугу</a>
       </section>
       <!-- Advantages Section -->
-      <section class="about">
-        <ul class="about__advantages">
-          <li class="advantages-item">
-            <h3 class="advantages-title">Внимание к деталям</h3>
-            <p class="advantages-text">
+      <section class="advantages">
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__item-title">Внимание к деталям</h3>
+            <p class="advantages__item-text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li class="advantages-item">
-            <h3 class="advantages-title">Пунктуальность</h3>
-            <p class="advantages-text">
+          <li class="advantages__item">
+            <h3 class="advantages__item-title">Пунктуальность</h3>
+            <p class="advantages__item-text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li class="advantages-item">
-            <h3 class="advantages-title">Планирование</h3>
-            <p class="advantages-text">
+          <li class="advantages__item">
+            <h3 class="advantages__item-title">Планирование</h3>
+            <p class="advantages__item-text">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li class="advantages-item">
-            <h3 class="advantages-title">Современные технологии</h3>
-            <p class="advantages-text">
+          <li class="advantages__item">
+            <h3 class="advantages__item-title">Современные технологии</h3>
+            <p class="advantages__item-text">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
           </li>
         </ul>
-        <h2 class="about__title">Чем мы занимаемся</h2>
-        <ul>
-          <li>
+      </section>
+      <!-- Visuals Section -->
+      <section class="visuals">
+        <h2 class="visuals__title">Чем мы занимаемся</h2>
+        <ul class="visuals__list">
+          <li class="visuals__list-item">
             <img
               class="about-img"
               src="./images/about-1.jpg"
               alt="hands on board"
+              width="370"
             />
           </li>
-          <li>
+          <li class="visuals__list-item">
             <img
               class="about-img"
               src="./images/about-2.jpg"
               alt="hands oh phone"
+              width="370"
             />
           </li>
-          <li>
+          <li class="visuals__list-item">
             <img
               class="about-img"
               src="./images/about-3.jpg"
               alt="hands on tablet"
+              width="370"
             />
           </li>
         </ul>
@@ -108,31 +115,47 @@
         <h2 class="team__title">Наша команда</h2>
         <ul>
           <li class="team__mate">
-            <img src="./images/team-mate-1.jpg" alt="teammate avatar" />
-            <h3 class="mate-name">Игорь Демьяненко</h3>
-            <p class="mate-position">Product Designer</p>
+            <img
+              src="./images/team-mate-1.jpg"
+              alt="teammate avatar"
+              width="270"
+            />
+            <h3 class="team__mate-name">Игорь Демьяненко</h3>
+            <p class="team__mate-position">Product Designer</p>
           </li>
           <li class="team__mate">
-            <img src="./images/team-mate-2.jpg" alt="teammate avatar" />
-            <h3 class="mate-name">Ольга Репина</h3>
-            <p class="mate-position">Frontend Developer</p>
+            <img
+              src="./images/team-mate-2.jpg"
+              alt="teammate avatar"
+              width="270"
+            />
+            <h3 class="team__mate-name">Ольга Репина</h3>
+            <p class="team__mate-position">Frontend Developer</p>
           </li>
           <li class="team__mate">
-            <img src=".images/team-mate-3.jpg" alt="teammate avatar" />
-            <h3 class="mate-name">Николай Тарасов</h3>
-            <p class="mate-position">Marketing</p>
+            <img
+              src=".images/team-mate-3.jpg"
+              alt="teammate avatar"
+              width="270"
+            />
+            <h3 class="team__mate-name">Николай Тарасов</h3>
+            <p class="team__mate-position">Marketing</p>
           </li>
           <li class="team__mate">
-            <img src="./images/team-mate-4.jpg" alt="teammate avatar" />
-            <h3 class="mate-name">Михаил Ермаков</h3>
-            <p class="mate-position">UI Designer</p>
+            <img
+              src="./images/team-mate-4.jpg"
+              alt="teammate avatar"
+              width="270"
+            />
+            <h3 class="team__mate-name">Михаил Ермаков</h3>
+            <p class="team__mate-position">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
     <!-- Footer -->
     <footer class="footer">
-      <a class="footer__logo" href=""> <span>Web</span>Studio </a>
+      <a class="footer__logo" href=""><span>Web</span>Studio</a>
       <address class="footer__address">
         г. Киев, пр-т Леси Украинки, 26
         <a href="mailto:info@example.com" class="mail"> info@example.com </a>
